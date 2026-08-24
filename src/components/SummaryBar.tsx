@@ -1,5 +1,5 @@
-import { STATUSES, type StatusCounts } from './types';
-import { CompletedIcon, DroppedIcon, InProgressIcon, NotStartedIcon } from './icons';
+import { STATUSES, type StatusCounts } from '../types';
+import { CompletedIcon, DroppedIcon, InProgressIcon, NotStartedIcon } from '../icons';
 
 const ICONS = {
   'Not Started': NotStartedIcon,

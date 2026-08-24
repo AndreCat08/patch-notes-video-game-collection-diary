@@ -1,5 +1,5 @@
-import { PLATFORM_LABELS, type Game } from './types';
-import { DeleteIcon, EditIcon } from './icons';
+import { PLATFORM_LABELS, type Game } from '../types';
+import { DeleteIcon, EditIcon } from '../icons';
 
 interface Props {
   game: Game;

@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { useGames } from './useGames';
-import { filterGames, countByStatus } from './filters';
+import { useGames } from './hooks/useGames';
+import { filterGames, countByStatus } from './lib/filters';
 import type { Filters, Game } from './types';
-import { SummaryBar } from './SummaryBar';
-import { FilterSidebar } from './FilterSidebar';
-import { GameCard } from './GameCard';
-import { GameModal } from './GameModal';
+import { SummaryBar } from './components/SummaryBar';
+import { FilterSidebar } from './components/FilterSidebar';
+import { GameCard } from './components/GameCard';
+import { GameModal } from './components/GameModal';
 import { SearchIcon } from './icons';
 
 const EMPTY_FILTERS: Filters = { query: '', platforms: [], statuses: [] };

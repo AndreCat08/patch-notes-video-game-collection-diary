@@ -1,4 +1,4 @@
-import { PLATFORMS, STATUSES, type Filters, type Platform, type Status } from './types';
+import { PLATFORMS, STATUSES, type Filters, type Platform, type Status } from '../types';
 
 interface Props {
   filters: Filters;

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { FORMATS, PLATFORMS, STATUSES, type Format, type Game, type GameDraft, type Platform, type Status } from './types';
-import { CloseIcon } from './icons';
+import { FORMATS, PLATFORMS, STATUSES, type Format, type Game, type GameDraft, type Platform, type Status } from '../types';
+import { CloseIcon } from '../icons';
 
 interface Props {
   game: Game | null;

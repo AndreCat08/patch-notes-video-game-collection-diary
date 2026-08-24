@@ -1,4 +1,4 @@
-import { FORMATS, PLATFORMS, STATUSES, type Game } from './types';
+import { FORMATS, PLATFORMS, STATUSES, type Game } from '../types';
 
 const KEY = 'patch-notes:games';
 

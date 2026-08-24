@@ -1,6 +1,6 @@
 import { describe, expect, it, beforeEach } from 'vitest';
-import { countByStatus, filterGames } from './filters';
-import { loadGames, saveGames } from './storage';
+import { countByStatus, filterGames } from './lib/filters';
+import { loadGames, saveGames } from './lib/storage';
 import type { Game } from './types';
 
 const games: Game[] = [

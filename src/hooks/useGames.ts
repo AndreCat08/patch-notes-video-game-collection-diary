@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { loadGames, saveGames } from './storage';
-import { SEED_GAMES } from './seed';
-import type { Game, GameDraft } from './types';
+import { loadGames, saveGames } from '../lib/storage';
+import { SEED_GAMES } from '../lib/seed';
+import type { Game, GameDraft } from '../types';
 
 export function useGames() {
   const [games, setGames] = useState<Game[]>(() => {

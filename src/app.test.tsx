@@ -2,7 +2,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from './App';
-import { saveGames } from './storage';
+import { saveGames } from './lib/storage';
 import type { Game } from './types';
 
 const games: Game[] = [

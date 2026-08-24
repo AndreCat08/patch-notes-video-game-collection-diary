@@ -1,4 +1,4 @@
-import { STATUSES, type Filters, type Game, type StatusCounts } from './types';
+import { STATUSES, type Filters, type Game, type StatusCounts } from '../types';
 
 export function filterGames(games: Game[], filters: Filters): Game[] {
   const query = filters.query.trim().toLowerCase();
