@@ -1,0 +1,1 @@
+max 40KB raw source (not zip size; markdown & images don't count) · oversized commits won't be scored

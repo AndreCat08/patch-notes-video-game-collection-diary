@@ -60,3 +60,7 @@ source (`index.html` + `src/**` + config files) is **~38KB**, checked with:
 ```bash
 find src index.html vite.config.ts tsconfig.json package.json -type f | xargs wc -c | tail -1
 ```
+
+`package-lock.json` and the `design/` mockup references are intentionally gitignored — they're
+not app source, and a naive by-extension size check would otherwise count them against the cap.
+Run `npm install` to regenerate the lockfile locally.
