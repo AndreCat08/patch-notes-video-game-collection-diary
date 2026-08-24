@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-background: #131313;
+  --color-on-background: #e5e2e1;
+  --color-surface: #131313;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container: #201f1f;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353534;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #cfc2d6;
+  --color-outline: #988d9f;
+
+  --color-primary: #ddb7ff;
+  --color-on-primary: #490080;
+  --color-primary-container: #b76dff;
+
+  --color-secondary: #4cd7f6;
+  --color-on-secondary: #003640;
+
+  --color-tertiary: #4edea3;
+  --color-on-tertiary: #003824;
+
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+
+  --font-display: 'Sora', sans-serif;
+  --font-body: 'Hanken Grotesk', sans-serif;
+
+  --spacing-2xs: 4px;
+  --spacing-1sm: 8px;
+  --spacing-1md: 16px;
+  --spacing-1lg: 24px;
+  --spacing-1xl: 40px;
+  --spacing-1gutter: 20px;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-body);
+}
+
+.glass-panel {
+  background: rgba(28, 27, 27, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(221, 183, 255, 0.1);
+}
+
+.pulse-dot {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
